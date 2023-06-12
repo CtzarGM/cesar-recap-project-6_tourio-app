@@ -12,10 +12,10 @@ export default function CreatePlacePage() {
   const router = useRouter();
 
   async function addPlace(place) {
-    const response = await fetch("./api/places", {
+    const response = await fetch("/api/places", {
       method: "POST",
       body: JSON.stringify(place),
-      headers: { "Content-Type": "aplication/json" },
+      headers: { "Content-Type": "application/json" },
     });
     if (response.ok) {
       await response.json();
