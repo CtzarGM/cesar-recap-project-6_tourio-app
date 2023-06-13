@@ -18,6 +18,7 @@ export default function EditPage() {
         "Content-Type": "application/json",
       },
     })
+    router.push("/");
   }
 
   // async function editPlace(place) {
