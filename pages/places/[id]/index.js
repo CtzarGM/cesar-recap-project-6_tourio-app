@@ -41,6 +41,7 @@ export default function DetailsPage() {
     await fetch(`/api/places/${id}`, {
       method: "DELETE",
     });
+    router.push("/");
   }
   // function deletePlace() {
   //   console.log('deleted?');
